@@ -61,7 +61,7 @@ for page_num in range(1,51):
 
         books_data.append([title, category, rating, price, availability])
         print(books_data)
-        print('*******')
+        print('*******') 
         print(f'total time: {total_time:.2f} minutes')
         print('*******')
         print(f'{page_num * len(books)} Books extrated so far...')

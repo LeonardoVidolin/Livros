@@ -1,35 +1,36 @@
-Projeto Data Engineering - Scraping e Armazenamento de Dados de Livros
+Data Engineering Project - Book Scraping and Data Storage
 
-Este projeto tem como objetivo extrair informações sobre livros do site https://books.toscrape.com/ utilizando as bibliotecas Selenium e BeautifulSoup em Python, e então armazenar esses dados em um arquivo CSV e em uma tabela PostgreSQL.
+This project aims to extract information about books from the website https://books.toscrape.com/ using the Selenium and BeautifulSoup libraries in Python, and then store this data in a CSV file and a PostgreSQL table.
 
-Instalação
+Installation
+Clone this repository:
 
-Clone este repositório:
-git clone https://github.com/seu_usuario/seu_repositorio.git
+git clone https://github.com/your_username/your_repository.git
+Install the dependencies:
 
-Instale as dependências:
-cd seu_repositorio
+cd your_repository
 pip install -r requirements.txt
-Certifique-se de ter o PostgreSQL instalado em sua máquina.
+Make sure PostgreSQL is installed on your machine.
 
-Utilização
-Execute o script Books_all_pages.py para extrair informações de todos os livros do site e salvar em um arquivo CSV:
+Usage
+Run the Books_all_pages.py script to extract information from all the books on the website and save it in a CSV file:
+
+
 python Books_all_pages.py
+Then, run the csv_to_DB.py script to create a table in PostgreSQL and import the data from the CSV file:
 
-Em seguida, execute o script csv_to_DB.py para criar uma tabela no PostgreSQL e importar os dados do CSV:
+
 python csv_to_DB.py
 
 
-Estrutura do Projeto
-- Books_all_pages.py: Script principal para extrair informações de todos os livros do site.
-- Books_page_1.py: Script para extrair informações da primeira página do site.
-- Books_page_1_category.py: Script para extrair informações da primeira página com as categorias .
-- Data_scrap.py: Módulo contendo funções para realizar o scraping das informações.
-- books_scraped.csv: Arquivo CSV onde os dados extraídos são salvos.
-- csv_to_DB.py: Script para criar uma tabela no PostgreSQL e importar os dados do CSV.
-- install_requirements.py: Script para instalar as dependências do projeto.
-- requirements.txt: Arquivo contendo as dependências do projeto.
-
-
-Contato
-Para mais informações ou dúvidas, entre em contato pelo email: leonardovidolin93@gmail.com.
+Project Structure
+Books_all_pages.py: Main script to extract information from all the books on the website.
+Books_page_1.py: Script to extract information from the first page of the website.
+Books_page_1_category.py: Script to extract information from the first page with categories.
+Data_scrap.py: Module containing functions to perform the data scraping.
+books_scraped.csv: CSV file where the extracted data is saved.
+csv_to_DB.py: Script to create a PostgreSQL table and import the data from the CSV file.
+install_requirements.py: Script to install the project dependencies.
+requirements.txt: File containing the project's dependencies.
+Contact
+For more information or questions, please contact via email: leonardovidolin93@gmail.com.
